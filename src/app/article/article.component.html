@@ -1,0 +1,13 @@
+<div class="row well">
+  <div class="col-lg-4">
+    <h1>{{article.votes}}</h1>
+    <h3>Points</h3>
+  </div>
+  <div class="col-lg-8 well text-center">
+    <a href="{{ article.link }}" class="btn btn-success btn-lg">{{article.title}}</a><br><br>
+    <div class="form-group">
+      <a href (click)="voteUp()" class="btn btn-primary">upvote</a>
+      <a href (click)="voteDown()" class="btn btn-danger">downvote</a>
+    </div>
+  </div>
+</div>
